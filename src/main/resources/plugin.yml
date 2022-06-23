@@ -1,0 +1,5 @@
+name: HubUtilities
+version: '${project.version}'
+main: me.kelopy.hubutilities.HubUtilities
+authors: [ Kelopy ]
+description: Manages your lobby/hub server
