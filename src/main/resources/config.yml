@@ -1,1 +1,16 @@
 world-name: 'world'
+
+motd: true
+motd-message:
+  - '               &c&l✦ &4&lACROBATIC LANDS &c&l✦'
+  - "   &7&owe are looking for staff, apply at the discord!"
+  - ""
+  - "             &c&lSTORE &fbuy.acrobaticlands.net"
+  - "             &4&lDISCORD &fdiscord.gg/acrobatic"
+  - ""
+
+first-join: true
+first-join-msg: "&b&l%player_name% &7has joined for the &bfirst time&7!"
+
+join-message: "&c%player_displayname% &7has joined the server!"
+quit-message: "&c%player_displayname% &7has left the server!"
