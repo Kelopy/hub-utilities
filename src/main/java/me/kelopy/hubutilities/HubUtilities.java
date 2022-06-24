@@ -15,6 +15,7 @@ public final class HubUtilities extends JavaPlugin {
     public void onEnable() {
         System.out.println("Lobby Manager is online.");
 
+        instance = this;
         getConfig().options().copyDefaults();
         saveDefaultConfig();
         papi();
