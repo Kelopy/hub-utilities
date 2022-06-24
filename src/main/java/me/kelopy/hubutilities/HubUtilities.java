@@ -9,6 +9,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public final class HubUtilities extends JavaPlugin {
 
+    private static HubUtilities instance;
+
     @Override
     public void onEnable() {
         System.out.println("Lobby Manager is online.");
@@ -17,10 +19,14 @@ public final class HubUtilities extends JavaPlugin {
         saveDefaultConfig();
         papi();
 
-        new keepDayTask(this).runTaskTimer(this, 0L, 100L);
+        new keepDayTask().runTaskTimer(this, 0L, 100L);
         getServer().getPluginManager().registerEvents(new clearWeather(), this);
-        getServer().getPluginManager().registerEvents(new playerJoin(this), this);
-        getServer().getPluginManager().registerEvents(new playerQuit(this), this);
+        getServer().getPluginManager().registerEvents(new playerJoin(), this);
+        getServer().getPluginManager().registerEvents(new playerQuit(), this);
+    }
+
+    public static HubUtilities getInstance(){
+        return instance;
     }
 
     @Override

@@ -7,15 +7,9 @@ import org.bukkit.event.player.PlayerQuitEvent;
 
 public class playerQuit implements Listener {
 
-    HubUtilities plugin;
-
-    public playerQuit(HubUtilities plugin) {
-        this.plugin = plugin;
-    }
-
     @EventHandler
     public void onQuit(PlayerQuitEvent event){
-        event.setQuitMessage(plugin.getConfig().getString("quit-message"));
+        event.setQuitMessage(HubUtilities.getInstance().getConfig().getString("quit-message"));
     }
 
 }

@@ -6,15 +6,9 @@ import org.bukkit.scheduler.BukkitRunnable;
 
 public class keepDayTask extends BukkitRunnable {
 
-    HubUtilities plugin;
-
-    public keepDayTask(HubUtilities plugin) {
-        this.plugin = plugin;
-    }
-
     @Override
     public void run() {
-        String world = plugin.getConfig().getString("world-name");
+        String world = HubUtilities.getInstance().getConfig().getString("world-name");
         if(Bukkit.getServer().getWorld(world) != null){
             Bukkit.getServer().getWorld(world).setTime(0L);
         }else{
