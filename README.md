@@ -1,2 +1,3 @@
-# hub-utilities
-Lobby Manager for your minecraft server
+# Hub Utilites 1.1
+
+Spigot Page https://www.spigotmc.org/resources/hub-utilities.102834/
