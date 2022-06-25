@@ -30,8 +30,8 @@ public class playerJoin implements Listener {
         }
 
         if(HubUtilities.getInstance().getConfig().getBoolean("motd")){
-            for(String s : HubUtilities.getInstance().getConfig().getStringList("motd-message")){
-                p.sendMessage(ChatColor.translateAlternateColorCodes('&', s));
+            for(String motd : HubUtilities.getInstance().getConfig().getStringList("motd-message")){
+                p.sendMessage(ChatColor.translateAlternateColorCodes('&', motd));
             }
         }
 

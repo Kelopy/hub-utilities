@@ -12,5 +12,15 @@ motd-message:
 first-join: true
 first-join-msg: "&b&l%player_name% &7has joined for the &bfirst time&7!"
 
-join-message: "&c%player_displayname% &7has joined the server!"
-quit-message: "&c%player_displayname% &7has left the server!"
+join-message: "&c%player_displayname% &7has joined the server."
+quit-message: "&c%player_displayname% &7has left the server."
+
+boost-pad: true
+fall-damage: true
+y-velocity: 2
+velocity-multiplier: 3
+top-block: "STONE_PLATE"
+under-block: "REDSTONE_BLOCK"
+
+message-enable: false
+message: "&b&oWooosh!"
