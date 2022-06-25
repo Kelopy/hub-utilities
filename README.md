@@ -1,3 +1,3 @@
-# Hub Utilites 1.1
+# Hub Utilites 1.2
 
 Spigot Page https://www.spigotmc.org/resources/hub-utilities.102834/
